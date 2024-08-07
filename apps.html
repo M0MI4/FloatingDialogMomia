@@ -1,3 +1,24 @@
-<img src="https://ik.imagekit.io/ikmedia/women-dress-2.jpg" 
-     width="400" 
-     height="500" />
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Change Image Every 5 Seconds</Tes1> 
+<style> 
+    .image { 
+        width: 100%; 
+        height: auto; 
+        animation: changeImage 5s infinite; 
+    } 
+ 
+    @keyframes changeImage { 
+        0% { background-image: url('https://ik.imagekit.io/ikmedia/women-dress-2.jpg'); } 
+        50% { background-image: url('https://ik.imagekit.io/ikmedia/women-dress-2.jpg'); } 
+        100% { background-image: url('https://ik.imagekit.io/ikmedia/women-dress-2.jpg'); } 
+    } 
+</style> 
+</head> 
+<body> 
+<div class="image"></div> 
+</body> 
+</html> 
