@@ -1,69 +1,94 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-  /* CSS to display the image */
-  .image-container {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-  }
-  img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .visible {
-    opacity: 1;
-  }
-</style>
+DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><link rel="stylesheet" type="text/css" href="cid:css-ebd014f3-1556-44d9-85ee-48b3a6546fb3@mhtml.blink" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
-  <div class="image-container">
-    <img src="https://ik.imagekit.io/ikmedia/women-dress-2.jpg" class="visible">
-    <img src="https://i.ibb.co/tX4hkKb/bixfy.jpg">
-    <img src="https://ik.imagekit.io/ikmedia/women-dress-2.jpg">
-    <!-- Add more images as needed -->
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>HamaSade</h1>
+<hr>
+
+<h2>PORTFOLIO</h2>
+<p>Resize the browser window to see the responsive effect.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://i.ibb.co/tX4hkKb/bixfy.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
   </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://i.ibb.co/tX4hkKb/bixfy.jpg" alt="Lights" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://i.ibb.co/tX4hkKb/bixfy.jpg" alt="Nature" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://i.ibb.co/tX4hkKb/bixfy.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
 
-  <button onclick="previousImage()">Previous</button>
-  <button onclick="nextImage()">Next</button>
+<div class="content">
+  <img src="https://i.ibb.co/tX4hkKb/bixfy.jpg" alt="Bear" style="width:100%">
+  <h3>Some Other Work</h3>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+</div>
 
-  <script>
-    let index = 0;
-    const images = document.querySelectorAll('.image-container img');
+<!-- END MAIN -->
+</div>
 
-    function showImage(index) {
-      images.forEach((img, i) => {
-        if (i === index) {
-          img.classList.add('visible');
-        } else {
-          img.classList.remove('visible');
-        }
-      });
-    }
 
-    function nextImage() {
-      index++;
-      if (index >= images.length) {
-        index = 0;
-      }
-      showImage(index);
-    }
 
-    function previousImage() {
-      index--;
-      if (index < 0) {
-        index = images.length - 1;
-      }
-      showImage(index);
-    }
-  </script>
-</body>
-</html>
+</body></html>
+------MultipartBoundary--3BlGkcJo2Rpjr26soWf33COcnncSo3fV9xcYC9yVMO----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-ebd014f3-1556-44d9-85ee-48b3a6546fb3@mhtml.blink
+
+@charset "windows-1252";
+
+* { box-sizing: border-box; }
+
+body { background-color: rgb(241, 241, 241); padding: 20px; font-family: Arial; }
+
+.main { max-width: 1000px; margin: auto; }
+
+h1 { font-size: 50px; word-break: break-all; }
+
+.row { margin: 8px -16px; }
+
+.row, .row > .column { padding: 8px; }
+
+.column { float: left; width: 25%; }
+
+.row::after { content: ""; display: table; clear: both; }
+
+.content { background-color: white; padding: 10px; }
+
+@media screen and (max-width: 900px) {
+  .column { width: 50%; }
+}
+
+@media screen and (max-width: 600px) {
+  .column { width: 100%; }
+}
+------MultipartBoundary--3BlGkcJo2Rpjr26soWf33COcnncSo3fV9xcYC9yVMO------
